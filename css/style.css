@@ -1,0 +1,372 @@
+                           /*----------///// General \\\\\----------*/
+:root{
+    --color-black:#000;
+    --color-white:#fff;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+                    /*---------- Navbar ----------*/
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color:var(--color-white) !important;
+}
+.navbar-nav .nav-link.active{
+    color:var(--color-black);
+}
+
+.navbar-nav .nav-link{
+    position: relative;
+}
+.navbar-nav .nav-link.active::before{
+    width: 90%;
+}
+.navbar-nav .nav-link::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--color-black);
+    position: absolute;
+    left: 5%;
+    bottom: 5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: -1;
+}
+.navbar-icon {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-icon li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.3);
+        margin-left: 5px;
+}
+                      /*---------- Home ----------*/
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('../imgs/bg.jpg');
+    background-size: cover;
+} 
+.home .h2,.home h2{
+    font-size: calc(2.5rem + .9vw);
+} 
+.animation::after{
+    content: '|';
+    animation: words 8s infinite;
+}
+@keyframes words {
+    /*Developer================*/
+    0%{content: '|'}
+    1.6%{content: 'D|'}
+    3.2%{content: 'De|'}
+    4.800000000000001%{content: 'Dev|'}
+    6.4%{content: 'Deve|'}
+    8%{content: 'Devel|'}
+    9.6%{content: 'Develo|'}
+    11.2%{content: 'Develo|'}
+    12.799999999999999%{content: 'Develop|'}
+    14.399999999999999%{content: 'Develope|'}
+    15.999999999999998%{content: 'Developer|'}
+    17.599999999999998%{content: 'Developer|'}
+    19.2%{content: 'Develope|'}
+    20.8%{content: 'Develop|'}
+    22.400000000000002%{content: 'Develo|'}
+    24.000000000000004%{content: 'Devel|'}
+    25.600000000000005%{content: 'Deve|'}
+    27.200000000000006%{content: 'Dev|'}
+    28.800000000000008%{content: 'De|'}
+    30.40000000000001%{content: 'D|'}
+    32.00000000000001%{content: '|'}
+      /* Designer ===============*/
+    33.60000000000001%{content: 'D|'}
+    35.20000000000001%{content: 'De|'}
+    36.80000000000001%{content: 'Des|'}
+    38.40000000000001%{content: 'Desi|'}
+    40.000000000000014%{content: 'Desig|'}
+    41.600000000000016%{content: 'Design|'}
+    43.20000000000002%{content: 'Designe|'}
+    44.80000000000002%{content: 'Designer|'}
+    46.40000000000002%{content: 'Designe|'}
+    48.00000000000002%{content: 'Design|'}
+    49.60000000000002%{content: 'Desig|'}
+    51.200000000000024%{content: 'Desi|'}
+    52.800000000000026%{content: 'Des|'}
+    54.40000000000003%{content: 'De|'}
+    56.00000000000003%{content: 'D|'}
+    57.60000000000003%{content: '|'}
+   /* Larry Daniels ==============*/
+    59.20000000000003%{content: 'L|'}
+    60.80000000000003%{content: 'La|'}
+    62.400000000000034%{content: 'Lar|'}
+    64.00000000000003%{content: 'Larr|'}
+    65.60000000000002%{content: 'Larry|'}
+    67.20000000000002%{content: 'Larry |'}
+    68.80000000000001%{content: 'Larry D|'}
+    70.4%{content: 'Larry Da|'}
+    72%{content: 'Larry Dan|'}
+    73.6%{content: 'Larry Dani|'}
+    75.19999999999999%{content: 'Larry Danie|'}v
+    76.79999999999998%{content: 'Larry Daniel|'}
+    78.39999999999998%{content: 'Larry Daniels|'}
+    79.99999999999997%{content: 'Larry Daniel|'}
+    81.59999999999997%{content: 'Larry Danie|'}
+    83.19999999999996%{content: 'Larry Dani|'}
+    84.79999999999995%{content: 'Larry Dan|'}
+    86.39999999999995%{content: 'Larry Da|'}
+    87.99999999999994%{content: 'Larry D|'}
+    89.59999999999994%{content: 'Larry |'}
+    91.19999999999993%{content: 'Larry|'}
+    92.79999999999993%{content: 'Larr|'}
+    94.39999999999992%{content: 'Lar|'}
+    95.99999999999991%{content: 'La|'}
+    97.59999999999991%{content: 'L|'}
+    99.1999999999999% {content: '|'}
+    100%{content: ''}
+}
+                    /*---------- About ----------*/
+.progress{
+    height: 27px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+
+}
+.target::after{
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        font-size: 11px;
+        color:var(--color-white);
+}
+.target-1::after{content: '95%';}
+.target-2::after{content: '80%';}
+.target-3::after{content: '90%';}
+.btn:hover {
+    color: var(--color-white);
+    background-color:var(--color-black);
+    border-color:var(--color-black);
+}
+.btn-outline-blak {
+    --bs-btn-color: var(--color-white);
+    --bs-btn-hover-bg: var(--color-black);
+    --bs-btn-active-color: var(--color-white);
+      background-color: var(--color-black);
+}
+.btn-contact:hover {
+    color: var(--color-black);
+    background-color:var(--color-white);
+    border-color: var(--color-black);
+}
+.inner-img:after {
+    content: "";
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+                     /*---------- Services ----------*/
+#services,#works,#team{
+    padding-block: 1.5rem;
+    background-color:#F7F7F7;
+}
+.title h2{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+.title h2:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+
+}
+.i{
+    background-color: #eee;
+    width: 70px;
+    height: 70px;
+    transform: translate();
+    transition: all 0.5s ease;
+}
+.card-icon:hover .i{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.card-icon p{
+    font-size: 14px;
+}
+                     /*---------- Portfolio ----------*/
+.item{
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.item:hover .caption{
+    background: var(--color-white);
+    color: var(--color-black);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    opacity: 1;
+
+}
+.caption{
+    position: absolute;
+    opacity: 0;
+    top: 150%;
+    transition: opacity 1s ease;
+}
+
+
+.caption span,.caption-team span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: var(--color-white);
+    background: var(--color-black);
+    margin-left: 5px;
+}
+.caption span:hover,.caption-team span:hover{
+    border: var(--color-black) 1px solid;
+    color: var(--color-black);
+    background: var(--color-white);
+
+}
+.nav-pills .nav-link{
+    
+    color:var(--color-black);
+    background-color:inherit;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link.active{
+    color:var(--color-black);
+    background-color:inherit;
+}
+.nav-pills .nav-link.active:before {
+    width: 90%;
+}
+.nav-pills .nav-link:before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--color-black);
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: -1;
+}
+                          /*---------- Works ----------*/
+.carousel-item img{
+    width: 90px;
+    height: 90px;
+
+}
+.carousel-item span{
+    font-size: 12px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-left: 10px;
+}
+                             /*---------- Team ----------*/
+.card-body{
+    background-color: #5B5B5B;
+    color: var(--color-white);
+}
+.item-team{
+    overflow: hidden;
+}
+.caption-team{
+    position: absolute;
+    inset: 5px;
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    overflow: hidden;
+    transition:all 0.5s ease;
+}
+.item-team:hover .caption-team{
+    background: rgba(255, 255, 255,0.9);
+    color: var(--color-black);
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+.item-team:hover .img img{
+    transform: scale(1.5) ;
+}
+.img img{
+    transition:all 0.5s ease;
+}
+.caption span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: var(--color-white);
+    background:var(--color-black);
+    margin-left: 5px;
+}
+.caption span:hover{
+    border: var(--color-black) 1px solid;
+    color: var(--color-black);
+    background: var(--color-white);
+
+}
+                         /*---------- contact ----------*/
+    .contact .i{
+        width: 60px;
+        height: 60px;
+    }
+    input,textarea{
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+                         /*---------- Footer ----------*/
+    footer{
+        background-color: #1C1C1C;
+        font-size:13px;
+      }
